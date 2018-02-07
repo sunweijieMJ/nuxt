@@ -16,6 +16,16 @@ import banner_url from '../assets/img/cooperate_img_banner.jpg';
 import banner_bg_url from '../assets/img/cooperate_img_banner_bg.jpg';
 
 export default {
+  head () {
+    return {
+      title: `LANEHUB 瓴里-Partners`,
+      meta: [
+        { name: 'keywords', content: 'partners keywords' },
+        { name: 'description', content: 'partners description' },
+        { hid: 'description', name: 'description', content: "Page 4 description" },
+      ],
+    }
+  },
   components: { Banner, PartnerContent, DownLoad, LaneHubFooter},
   data() {
     return {

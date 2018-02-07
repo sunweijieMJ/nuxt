@@ -19,6 +19,16 @@ import banner_url from '../assets/img/products_img_banner.jpg';
 import banner_bg_url from '../assets/img/products_img_banner_bg.jpg';
 
 export default {
+  head () {
+    return {
+      title: `LANEHUB 瓴里-Product`,
+      meta: [
+        { name: 'keywords', content: 'product keywords' },
+        { name: 'description', content: 'product description' },
+        { hid: 'description', name: 'description', content: "Page 3 description" },
+      ],
+    }
+  },
   components:{ImageText, Banner, DownLoad, LaneHubFooter},
   data() {
     return {

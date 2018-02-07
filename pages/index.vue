@@ -17,6 +17,16 @@
   import banner_bg_url from '../assets/img/index_img_banner_bg.jpg';
 
   export default {
+    head () {
+      return {
+        title: `LANEHUB 瓴里-Home`,
+        meta: [
+          { name: 'keywords', content: 'LANEHUB, 瓴里, 瓴里生活, LANEHUB Lifestyle, 家具, 家居, 新零售, 生活方式' },
+          { name: 'description', content: 'LANEHUB 瓴里，创造愉悦生活方式的用户品牌。通过匠心品质的家具家居产品，极致的线上线下体验，和懂生活、有品位、爱分享的朋友们，共同创造更美好的生活。' },
+          { hid: 'description', name: 'description', content: "Page 1 description" },
+        ],
+      }
+    },
     components: {
       Banner,ImageText,LaneHubApp,LaneHubFooter
     },

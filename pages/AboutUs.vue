@@ -19,6 +19,16 @@ import banner_url from '../assets/img/about_img_banner.jpg';
 import banner_bg_url from '../assets/img/about_img_banner_bg.jpg';
 
 export default {
+  head () {
+    return {
+      title: `LANEHUB 瓴里-About`,
+      meta: [
+        { name: 'keywords', content: 'aboutUs keywords' },
+        { name: 'description', content: 'aboutUs description' },
+        { hid: 'description', name: 'description', content: "Page 2 description" },
+      ],
+    }
+  },
   components: { ImageText, Banner, DownLoad, LaneHubFooter},
   data() {
     return {
