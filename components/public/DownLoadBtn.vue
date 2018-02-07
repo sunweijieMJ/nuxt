@@ -4,7 +4,7 @@
       <img src="../../assets/icon/download_ic_ios.png" alt=""><a href="https://itunes.apple.com/cn/app/kk-gou-wu/id1319173852?mt=8" target="_blank">iPhone</a>
     </div>
     <div class="btn" @click="android_download">
-      <img src="../../assets/icon/download_ic_android.png" alt=""><a href="jhttps://download.lanehub.cn/android" target="_blank">Android</a>
+      <img src="../../assets/icon/download_ic_android.png" alt=""><a href="https://download.lanehub.cn/android">Android</a>
     </div>
   </div>
 </template>

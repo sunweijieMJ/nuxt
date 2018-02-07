@@ -3,7 +3,7 @@
     <div class="text_content">
       <h3>共生共赢的发展平台</h3>
       <p>LANEHUB 瓴里，是由顶尖设计师、互联网专家、与资深家具家居供应链管理者，共同创建的生活方式品牌。旨在提供设计感、品质感、愉悦感的产品，为用户创造愉悦的生活方式。加入 LANEHUB 平台，和我们分享创造新世界的激情。</p>
-      <a href="javascript: window.location.href = 'mailto:lei.cao@lanehubinc.com';">联系我们</a>
+      <a href="mailto:lei.cao@lanehubinc.com">联系我们</a>
     </div>
     <div class="image_content">
       <li v-for="(item,index) in image_content" :key="index">

@@ -4,7 +4,7 @@
       <img src="../../assets/icon/nav_ic_logo.png" alt="">
     </h1>
     <nav>
-      <a :href="item.router" v-for="(item,index) in tab" :key="index" @click="chooseTab(item.router)" :class="{active:activeTab===item.router}">{{item.title}}</a>
+      <a :href="item.router=='index'?'/':item.router" v-for="(item,index) in tab" :key="index" @click="chooseTab(item.router)" :class="{active:activeTab===item.router}">{{item.title}}</a>
       <a href="javascript:;" @click="download">瓴里 App</a>
     </nav>
   </div>
