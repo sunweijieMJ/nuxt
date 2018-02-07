@@ -49,7 +49,6 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@import '../../assets/style/tool.less';
   .partner{
     min-width: 1000px;
     .text_content {

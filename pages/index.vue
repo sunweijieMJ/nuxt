@@ -37,7 +37,7 @@
             ],
             btn: true,
             btn_text: "了解瓴里",
-            btn_href: "AboutUs",
+            btn_href: "aboutUs",
             img_url: home_img_01
           },
           {
@@ -54,7 +54,7 @@
             ],
             btn: true,
             btn_text: "更多产品",
-            btn_href: "LaneHubProduct",
+            btn_href: "laneHubProduct",
             img_url: ""
           }
         ],
@@ -69,7 +69,4 @@
     }
   }
 </script>
-<style lang="less" scoped>
-  @import '../assets/style/tool.less';
-</style>
 

@@ -19,11 +19,9 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@import '../../assets/style/tool.less';
   .download{
     margin-top: 130px;
     min-width: 1080px;
-    height: 180px;
     padding: 100px 0;
     background-color: #f1f2f6;
     .download_content{

@@ -8,7 +8,7 @@
           <p v-for="(val,index) in item.desc" :key="index">{{val}}</p>
         </div>
         <div class="btn_wrap" v-if="item.btn">
-            <a href="javascript:;" @click="skip(item.btn_href)">{{item.btn_text}}</a>
+            <a :href="item.btn_href" @click="skip(item.btn_href)">{{item.btn_text}}</a>
         </div>
         <div class="img_wrap" v-if="item.img_url">
             <img :src="item.img_url" alt="">
@@ -27,7 +27,6 @@ export default {
 };
 </script>
 <style lang="less" scoped>
-@import '../../assets/style/tool.less';
   @media screen and(max-width:1440px){
     .image_text_wrap{
       min-width: 1280px;

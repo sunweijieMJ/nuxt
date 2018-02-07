@@ -21,7 +21,6 @@ export default {
 </script>
 
 <style lang="less" scoped>
-  @import '../../assets/style/tool.less';
   .banner{
     min-width: 1280px;
     min-height: 689px;

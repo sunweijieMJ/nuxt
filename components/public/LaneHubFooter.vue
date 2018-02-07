@@ -57,7 +57,6 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@import '../../assets/style/tool.less';
   @media screen and(max-width:1440px){
     footer{
       min-width: 1280px;

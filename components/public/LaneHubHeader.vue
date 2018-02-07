@@ -4,7 +4,8 @@
       <img src="../../assets/icon/nav_ic_logo.png" alt="">
     </h1>
     <nav>
-      <a href="javascript:;" v-for="(item,index) in tab" :key="index" @click="chooseTab(item.router)" :class="{active:activeTab===item.router}">{{item.title}}</a>
+      <a :href="item.router" v-for="(item,index) in tab" :key="index" @click="chooseTab(item.router)" :class="{active:activeTab===item.router}">{{item.title}}</a>
+      <a href="javascript:;" @click="download">瓴里 App</a>
     </nav>
   </div>
 </template>
@@ -15,23 +16,19 @@ export default {
       tab: [
         {
           title: '首页',
-          router: 'Home',
+          router: 'index',
         },
         {
           title: '关于我们',
-          router: 'AboutUs',
+          router: 'aboutUs',
         },
         {
           title: '瓴里产品',
-          router: 'LaneHubProduct',
+          router: 'laneHubProduct',
         },
         {
           title: '商业合作',
-          router: 'Partners',
-        },
-        {
-          title: '瓴里 App',
-          router: 'LaneHubApp',
+          router: 'partners',
         }
       ],
       activeTab: {}
@@ -42,15 +39,11 @@ export default {
   },
   methods: {
     chooseTab(name){
-      if(name === 'LaneHubApp'){
-        this.download();
-        return;
-      }
       this.activeTab = name;
       this.$router.push({name:name});
     },
     goHome(){
-      this.$router.push({name:'Home'});
+      this.$router.push({name:'index'});
     },
     download(){
       let height = document.documentElement.offsetHeight;
@@ -65,7 +58,6 @@ export default {
 }
 </script>
 <style lang="less" scoped>
-@import '../../assets/style/tool.less';
   .header{
     width: 100%;
     min-width: 1280px;
