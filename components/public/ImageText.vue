@@ -89,58 +89,45 @@ export default {
       .image_text_content {
         color: #000000;
         padding-top: 124px;
-        // padding-top: 96px;
         .title{
             margin-bottom: 56px;
-            // margin-bottom: 44px;
           h3 {
             font-size: 48px;
-            // font-size: 36px;
             font-weight: 300;
             font-style: normal;
             letter-spacing: 2.4px;
             line-height: 60px;
-            // line-height: 50px;
             text-align: center;
           }
         }
         .desc{
           margin-bottom: 34px;
-          // margin-bottom: 24px;
           p{
             font-size: 24px;
-            // font-size: 20px;
             font-weight: 300;
             line-height: 40px;
             letter-spacing: 1.8px;
-            // line-height: 34px;
             text-align: center;
           }
         }
         .btn_wrap {
           margin: 82px 0 130px;
-          // margin: 72px 0 102px;
           a {
             display: block;
             margin: auto;
             width: 152px;
             height: 48px;
-            // width: 112px;
-            // height: 36px;
             border-radius: 24px;
             border: solid 1px #000000;
             font-size: 18px;
-            // font-size: 14px;
             font-weight: 300;
             line-height: 48px;
-            // line-height: 36px;
             text-align: center;
             color: #000000;
           }
         }
         .img_wrap {
           margin: 122px auto 0 auto;
-          // margin: 91px auto 0 auto;
           min-width: 1280px;
           min-height: auto;
           img {
