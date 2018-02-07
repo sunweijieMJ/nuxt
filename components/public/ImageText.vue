@@ -11,7 +11,7 @@
             <a :href="item.btn_href" @click="skip(item.btn_href)">{{item.btn_text}}</a>
         </div>
         <div class="img_wrap" v-if="item.img_url">
-            <img :src="item.img_url" alt="">
+            <img :src="item.img_url" alt="简介图">
         </div>
       </div>
   </div>

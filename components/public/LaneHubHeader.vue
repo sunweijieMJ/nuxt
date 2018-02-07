@@ -1,10 +1,10 @@
 <template>
   <div class="header">
     <h1 @click="goHome">
-      <img src="../../assets/icon/nav_ic_logo.png" alt="">
+      <img src="../../assets/icon/nav_ic_logo.png" alt="公司名称">
     </h1>
     <nav>
-      <a :href="item.router=='index'?'/':item.router" v-for="(item,index) in tab" :key="index" @click="chooseTab(item.router)" :class="{active:activeTab===item.router}">{{item.title}}</a>
+      <a :href="item.router=='index'?'/':'/'+item.router" v-for="(item,index) in tab" :key="index" @click="chooseTab(item.router)" :class="{active:activeTab===item.router}">{{item.title}}</a>
       <a href="javascript:;" @click="download">瓴里 App</a>
     </nav>
   </div>

@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-    <img src="../../assets/img/index_img_02.jpg" alt="">
+    <img src="../../assets/img/index_img_02.jpg" alt="下载背景图">
     <div class="app_box">
       <ImgText :imageText="img_text"></ImgText>
       <DownLoadBtn></DownLoadBtn>

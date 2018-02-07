@@ -1,7 +1,7 @@
 <template>
   <div class="download">
     <div class="download_content">
-      <img src="../../assets/icon/download_ic_qc.png" alt="">
+      <img src="../../assets/icon/download_ic_qc.png" alt="下载二维码">
       <div class="platform">
         <h3>即刻体验 <span>瓴里 App</span></h3>
         <DownLoadBtn></DownLoadBtn>

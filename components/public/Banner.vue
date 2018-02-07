@@ -1,9 +1,9 @@
 <template>
   <div class="banner" v-if="banner" :style="{backgroundImage:`url(${banner.bg_img})`}">
     <LaneHubHeader></LaneHubHeader>
-    <img v-if="banner.img" :src="banner.img" alt="">
+    <img v-if="banner.img" :src="banner.img" alt="banner图">
     <div class="introduce">
-      <img v-if="banner.logo" src="../../assets/icon/banner_ic_logo.png" alt="">
+      <img v-if="banner.logo" src="../../assets/icon/banner_ic_logo.png" alt="公司logo">
       <h3 v-for="(val,index) in banner.title" :key="index">{{val}}</h3>
       <p v-if="banner.desc">{{banner.desc}}</p>
     </div>

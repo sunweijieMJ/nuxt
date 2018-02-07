@@ -8,7 +8,7 @@
     <div class="image_content">
       <li v-for="(item,index) in image_content" :key="index">
         <div>
-          <img :src="item.img" alt="">
+          <img :src="item.img" alt="logo">
         </div>
         <div>
           <h4>{{item.title}}</h4>
