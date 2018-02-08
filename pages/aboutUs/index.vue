@@ -7,16 +7,16 @@
   </div>
 </template>
 <script>
-import ImageText from '../components/public/ImageText';
-import Banner from "../components/public/Banner";
-import DownLoad from '../components/public/DownLoad';
-import LaneHubFooter from '../components/public/LaneHubFooter';
+import ImageText from '../../components/public/ImageText';
+import Banner from "../../components/public/Banner";
+import DownLoad from '../../components/public/DownLoad';
+import LaneHubFooter from '../../components/public/LaneHubFooter';
 
-import about_img_01 from "../assets/img/about_img_01.jpg";
-import about_img_02 from "../assets/img/about_img_02.jpg";
-import about_img_03 from "../assets/img/about_img_03.jpg";
-import banner_url from '../assets/img/about_img_banner.jpg';
-import banner_bg_url from '../assets/img/about_img_banner_bg.jpg';
+import about_img_01 from "../../assets/img/about_img_01.jpg";
+import about_img_02 from "../../assets/img/about_img_02.jpg";
+import about_img_03 from "../../assets/img/about_img_03.jpg";
+import banner_url from '../../assets/img/about_img_banner.jpg';
+import banner_bg_url from '../../assets/img/about_img_banner_bg.jpg';
 
 export default {
   head () {

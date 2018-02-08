@@ -7,13 +7,13 @@
   </div>
 </template>
 <script>
-import Banner from "../components/public/Banner";
-import PartnerContent from '../components/other/PartnerContent';
-import DownLoad from '../components/public/DownLoad';
-import LaneHubFooter from '../components/public/LaneHubFooter';
+import Banner from "../../components/public/Banner";
+import PartnerContent from '../../components/other/PartnerContent';
+import DownLoad from '../../components/public/DownLoad';
+import LaneHubFooter from '../../components/public/LaneHubFooter';
 
-import banner_url from '../assets/img/cooperate_img_banner.jpg';
-import banner_bg_url from '../assets/img/cooperate_img_banner_bg.jpg';
+import banner_url from '../../assets/img/cooperate_img_banner.jpg';
+import banner_bg_url from '../../assets/img/cooperate_img_banner_bg.jpg';
 
 export default {
   head () {
