@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = {
   /*
   ** Headers of the page
@@ -23,6 +25,7 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
+    publicPath: 'https://static04.lanehub.cn/',
     extend (config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
