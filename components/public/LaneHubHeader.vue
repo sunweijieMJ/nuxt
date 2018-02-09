@@ -5,7 +5,6 @@
     </h1>
     <nav>
       <a :href="item.router=='index'?'/':'/'+item.router" v-for="(item,index) in tab" :key="index" @click="chooseTab(item.router)" :class="{active:activeTab===item.router}">{{item.title}}</a>
-      <a href="javascript:;" @click="download">瓴里 App</a>
     </nav>
   </div>
 </template>
@@ -76,7 +75,8 @@ export default {
       margin: 33px 40px 0 0;
       position: relative;
       a{
-        font-size: 16px;
+        font-size: 18px;
+        font-weight: 300;
         line-height: 18px;
         text-align: center;
         color: #ffffff;
@@ -84,13 +84,6 @@ export default {
         margin-left: 40px;
         &.active{
           border-bottom: 2px solid #ffffff;
-        }
-        &:last-of-type{
-          font-size: 14px;
-          font-family: 'Helvetica';
-          padding: 8px 16px;
-          border-radius: 17px;
-          border: 1px solid #ffffff;
         }
       }
       span{

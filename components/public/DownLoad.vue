@@ -1,50 +1,108 @@
 <template>
   <div class="download">
-    <div class="download_content">
-      <img src="../../assets/icon/download_ic_qc.png" alt="下载二维码">
-      <div class="platform">
+    <div class="download_box clearfix">
+      <img src="../../assets/img/download_iphone.png" alt="">
+      <div class="download_content clearfix">
         <h3>即刻体验 <span>瓴里 App</span></h3>
-        <DownLoadBtn></DownLoadBtn>
+        <div class="platform">
+          <img src="../../assets/icon/download_ic_qc.jpg" alt="下载二维码">
+          <div class="download_btn">
+            <div class="btn" @click="iphone_download">
+              <img src="../../assets/icon/download_ic_ios.png" alt="下载图标"><a href="https://itunes.apple.com/cn/app/kk-gou-wu/id1319173852?mt=8" target="_blank">iPhone</a>
+            </div>
+            <div class="btn" @click="android_download">
+              <img src="../../assets/icon/download_ic_android.png" alt="下载图标"><a href="https://download.lanehub.cn/android">Android</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </template>
 <script>
-import DownLoadBtn from './DownLoadBtn';
 export default {
-  components: {
-    DownLoadBtn
+  methods: {
+    iphone_download(){
+      window.open('https://itunes.apple.com/cn/app/kk-gou-wu/id1319173852?mt=8');
+    },
+    android_download(){
+      window.location.href = 'https://download.lanehub.cn/android';
+    }
   }
 }
 </script>
-
 <style lang="less" scoped>
   .download{
     margin-top: 130px;
-    min-width: 1080px;
-    padding: 100px 0;
+    min-width: 1280px;
+    height: 270px;
+    padding: 60px 0 50px;
     background-color: #f1f2f6;
-    .download_content{
-      width: 666px;
-      height: 180px;
+    .download_box{
+      width: 740px;
       margin: auto;
-      img{
-        width: 180px;
-        height: 180px;
+      >img{
+        transform: translateY(-80px);
+        width: 200px;
         float: left;
       }
-      .platform{
-        float: right;
+      .download_content{
+        float: left;
+        width: 440px;
+        margin-left: 90px;
         h3{
-          margin-bottom: 76px;
           font-size: 48px;
           line-height: 48px;
           font-weight: 300;
           letter-spacing: 2.4px;
           text-align: left;
           color: #000000;
+          margin-bottom: 67px;
           span{
             font-weight: 400;
+          }
+        }
+        .platform{
+          height: 155px;
+          >img{
+            float: left;
+            width: 155px;
+          }
+          .download_btn{
+            margin: 6px 0 0 60px;
+            float: left;
+            .btn{
+              width: 171px;
+              height: 55px;
+              text-align: center;
+              line-height: 55px;
+              border-radius: 27.5px;
+              background-color: #000000;
+              margin-bottom: 30px;
+              cursor: pointer;
+              &:last-child{
+                margin-right: 0;
+                img{
+                  transform: translateY(-2px);
+                }
+              }
+              >img{
+                width: 24px;
+                vertical-align: middle;
+                transform: translateY(-3px);
+              }
+              a{
+                margin-left: 10px;
+                display: inline-block;
+                vertical-align: middle;
+                font-family: Helvetica;
+                font-size: 20px;
+                font-weight: 300;
+                letter-spacing: 1px;
+                text-align: center;
+                color: #ffffff;
+              }
+            }
           }
         }
       }

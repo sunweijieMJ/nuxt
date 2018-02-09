@@ -99,6 +99,10 @@ th {
     vertical-align: middle;
 }
 
+// 清除浮动
+.clearfix:after{content:".";clear:both;display:block;height:0;overflow:hidden;visibility:hidden;}
+.clearfix{zoom:1;}
+
 // 适配
 .re(@width){
     @xs : 100px/(2880px/@width);

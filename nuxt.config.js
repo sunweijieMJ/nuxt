@@ -12,7 +12,13 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    ],
+    // html head 中创建 script 标签
+    script: [
+      { type: 'text/javascript', src: 'https://hm.baidu.com/hm.js?c48fa0880520432236867310b32dfb6c'}
+    ],
+    // 不对<script>标签中内容做转义处理
+    __dangerouslyDisableSanitizers: ['script']
   },
   /*
   ** Customize the progress bar color
@@ -25,7 +31,7 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
-    publicPath: 'https://static04.lanehub.cn/',
+    publicPath: 'https://static06.lanehub.cn/',
     extend (config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({

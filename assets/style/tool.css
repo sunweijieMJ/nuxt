@@ -90,6 +90,17 @@ th {
   text-align: center;
   vertical-align: middle;
 }
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.clearfix {
+  zoom: 1;
+}
 @media (max-width: 2880px) {
   html {
     font-size: 100px;
