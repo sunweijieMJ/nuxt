@@ -23,8 +23,8 @@ export default {
     return {
       title: `LANEHUB 瓴里-About`,
       meta: [
-        { name: 'keywords', content: 'aboutUs keywords' },
-        { name: 'description', content: 'aboutUs description' },
+         { name: 'keywords', content: '设计 + 科技驱动的用户企业' },
+        { name: 'description', content: '来自互联网与家具家居行业的顶尖创始团队' },
         { hid: 'description', name: 'description', content: "Page 2 description" },
       ],
     }

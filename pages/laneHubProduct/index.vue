@@ -23,8 +23,8 @@ export default {
     return {
       title: `LANEHUB 瓴里-Product`,
       meta: [
-        { name: 'keywords', content: 'product keywords' },
-        { name: 'description', content: 'product description' },
+        { name: 'keywords', content: '重新定义和设计家居生活' },
+        { name: 'description', content: '涵盖生活方方面面的家居系列' },
         { hid: 'description', name: 'description', content: "Page 3 description" },
       ],
     }

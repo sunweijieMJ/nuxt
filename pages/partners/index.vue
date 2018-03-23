@@ -22,8 +22,8 @@ export default {
     return {
       title: `LANEHUB 瓴里-Partners`,
       meta: [
-        { name: 'keywords', content: 'partners keywords' },
-        { name: 'description', content: 'partners description' },
+        { name: 'keywords', content: '一起创造新的生活方式' },
+        { name: 'description', content: 'LANEHUB 瓴里，是由顶尖设计师、互联网专家、与资深家具家居供应链管理者，共同创建的生活方式品牌' },
         { hid: 'description', name: 'description', content: "Page 4 description" },
       ],
     }
