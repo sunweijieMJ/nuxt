@@ -27,11 +27,11 @@
     padding: 60px 0 50px;
     background-color: #f1f2f6;
     .download_box{
-      width: 740px;
+      width: 760px;
       margin: auto;
       >img{
         transform: translateY(-80px);
-        width: 200px;
+        width: 230px;
         float: left;
       }
       .download_content{
