@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <h1 @click="goHome">
-      <img src="../../assets/icon/nav_ic_logo.png" alt="公司名称">
+      <img src="../../assets/icon/nav_ic_logo.png" alt="logo">
     </h1>
     <nav>
       <a :href="item.router=='index'?'/':'/'+item.router" v-for="(item,index) in tab" :key="index" @click="chooseTab(item.router)" :class="{active:activeTab===item.router}">{{item.title}}</a>
@@ -43,15 +43,6 @@ export default {
     },
     goHome(){
       this.$router.push({name:'index'});
-    },
-    download(){
-      let height = document.documentElement.offsetHeight;
-      this.setScrollTop(height);
-    },
-    setScrollTop(scroll_top){
-      window.pageYOffset = scroll_top;
-      document.documentElement.scrollTop = scroll_top;
-      document.body.scrollTop = scroll_top;
     }
   }
 }

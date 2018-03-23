@@ -8,7 +8,7 @@
           <p v-for="(val,index) in item.desc" :key="index">{{val}}</p>
         </div>
         <div class="btn_wrap" v-if="item.btn">
-            <a :href="item.btn_href" @click="skip(item.btn_href)">{{item.btn_text}}</a>
+            <a :href="item.btn_href">{{item.btn_text}}</a>
         </div>
         <div class="img_wrap" v-if="item.img_url">
             <img :src="item.img_url" alt="简介图">
@@ -17,14 +17,9 @@
   </div>
 </template>
 <script>
-export default {
-  props:['imageText'],
-  methods: {
-    skip(name){
-      this.$router.push({name:name});
-    }
+  export default {
+    props:['imageText']
   }
-};
 </script>
 <style lang="less" scoped>
   @media screen and(max-width:1440px){

@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-    <img src="../../assets/img/index_img_02.jpg" alt="下载背景图">
+    <img src="../../assets/img/index_img_02.jpg" alt="iPhoneX预览图">
     <div class="app_box">
       <ImgText :imageText="img_text"></ImgText>
       <DownLoadBtn></DownLoadBtn>
@@ -40,6 +40,7 @@ export default {
 }
 </script>
 <style lang="less" scoped>
+@media screen and(max-width:1440px){
   .app{
     min-width: 1280px;
     min-height: auto;
@@ -51,11 +52,41 @@ export default {
     }
     .app_box{
       position: absolute;
-      right: 0;top: 19%;
+      right: 0;top: 27%;
       z-index: 2000;
       width: 780px;
       height: 380px;
-      margin-right: 10%;
+      margin-right: 14%;
+      .image_text_wrap{
+        min-width: 780px;
+        max-width: 800px;
+        margin-bottom: 90px;
+        margin-bottom: 60px;
+        margin-top: -96px;
+      }
+      .download_btn{
+        margin: auto;
+      }
+    }
+  }
+}
+@media screen and(min-width:1440px){
+  .app{
+    min-width: 1280px;
+    min-height: auto;
+    position: relative;
+    img{
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    .app_box{
+      position: absolute;
+      right: 0;top: 23%;
+      z-index: 2000;
+      width: 780px;
+      height: 380px;
+      margin-right: 14%;
       .image_text_wrap{
         min-width: 780px;
         max-width: 800px;
@@ -68,6 +99,7 @@ export default {
       }
     }
   }
+}
 </style>
 
 

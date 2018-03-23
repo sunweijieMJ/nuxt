@@ -1,7 +1,7 @@
 <template>
   <footer>
     <h2>
-      <img src="../../assets/icon/footer_ic_logo.png" alt="">
+      <img src="../../assets/icon/footer_ic_logo.png" alt="公司名称">
     </h2>
     <div class="tab">
       <a :href="item.router!=='joinUs'?item.router:'https://mp.weixin.qq.com/s/T7gEFB6M4TvBwPVfFZCGiA'" :target="item.router==='joinUs'?'_black':'_self'" v-for="(item,index) in tab" :key="index"><span v-if="item.title === '首页'">首页</span>{{item.title}}</a>
@@ -34,7 +34,7 @@
             title: '加入我们',
             router: 'joinUs',
           }
-        ],
+        ]
       }
     }
   }

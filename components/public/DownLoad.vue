@@ -1,36 +1,24 @@
 <template>
   <div class="download">
     <div class="download_box clearfix">
-      <img src="../../assets/img/download_iphone.png" alt="">
+      <img src="../../assets/img/download_iphone.png" alt="iPhoneX预览图">
       <div class="download_content clearfix">
         <h3>即刻体验 <span>瓴里 App</span></h3>
         <div class="platform">
           <img src="../../assets/icon/download_ic_qc.jpg" alt="下载二维码">
           <div class="download_btn">
-            <div class="btn" @click="iphone_download">
-              <img src="../../assets/icon/download_ic_ios.png" alt="下载图标"><a href="https://itunes.apple.com/cn/app/kk-gou-wu/id1319173852?mt=8" target="_blank">iPhone</a>
-            </div>
-            <div class="btn" @click="android_download">
-              <img src="../../assets/icon/download_ic_android.png" alt="下载图标"><a href="https://download.lanehub.cn/android">Android</a>
-            </div>
+            <a href="https://itunes.apple.com/cn/app/kk-gou-wu/id1319173852?mt=8" target="_blank">
+              <img src="../../assets/icon/download_ic_ios.png" alt="iPhone下载图标"><span>iPhone</span>
+            </a>
+            <a href="https://download.lanehub.cn/android">
+              <img src="../../assets/icon/download_ic_android.png" alt="Android下载图标"><span>Android</span>
+            </a>
           </div>
         </div>
       </div>
     </div>
   </div>
 </template>
-<script>
-export default {
-  methods: {
-    iphone_download(){
-      window.open('https://itunes.apple.com/cn/app/kk-gou-wu/id1319173852?mt=8');
-    },
-    android_download(){
-      window.location.href = 'https://download.lanehub.cn/android';
-    }
-  }
-}
-</script>
 <style lang="less" scoped>
   .download{
     margin-top: 130px;
@@ -71,7 +59,8 @@ export default {
           .download_btn{
             margin: 6px 0 0 60px;
             float: left;
-            .btn{
+            a{
+              display: block;
               width: 171px;
               height: 55px;
               text-align: center;
@@ -91,7 +80,7 @@ export default {
                 vertical-align: middle;
                 transform: translateY(-3px);
               }
-              a{
+              span{
                 margin-left: 10px;
                 display: inline-block;
                 vertical-align: middle;
