@@ -53,17 +53,17 @@ export default {
     min-width: 1280px;
     position: absolute;
     h1{
-      margin: 34px 40px;
+      margin: 24px 40px;
       float: left;
       cursor: pointer;
       img{
-        width: 154px;
+        width: 241px;
         display: block;
       }
     }
     nav{
       float: right;
-      margin: 33px 40px 0 0;
+      margin: 48px 40px 0 0;
       position: relative;
       a{
         font-size: 18px;

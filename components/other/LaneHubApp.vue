@@ -3,17 +3,26 @@
     <img src="../../assets/img/index_img_02.jpg" alt="iPhoneX预览图">
     <div class="app_box">
       <ImgText :imageText="img_text"></ImgText>
-      <DownLoadBtn></DownLoadBtn>
+      <div class="platform">
+        <img src="../../assets/icon/download_pc.png" alt="下载二维码">
+        <div class="download_btn">
+          <a href="https://itunes.apple.com/cn/app/kk-gou-wu/id1319173852?mt=8" target="_blank">
+            <img src="../../assets/icon/download_ic_ios.png" alt="iPhone下载图标"><span>iPhone</span>
+          </a>
+          <a href="https://download.lanehub.cn/android">
+            <img src="../../assets/icon/download_ic_android.png" alt="Android下载图标"><span>Android</span>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 <script>
 import ImgText from '../public/ImageText';
-import DownLoadBtn from '../public/DownLoadBtn';
 
 export default {
   components: {
-    ImgText,DownLoadBtn
+    ImgText
   },
   data(){
     return {
@@ -45,7 +54,7 @@ export default {
     min-width: 1280px;
     min-height: auto;
     position: relative;
-    img{
+    >img{
       width: 100%;
       height: 100%;
       display: block;
@@ -61,11 +70,54 @@ export default {
         min-width: 780px;
         max-width: 800px;
         margin-bottom: 90px;
-        margin-bottom: 60px;
+        margin-bottom: 10px;
         margin-top: -96px;
       }
-      .download_btn{
+      .platform{
         margin: auto;
+        width: 390px;
+        height: 155px;
+        >img{
+          float: left;
+          width: 155px;
+        }
+        .download_btn{
+          margin: 6px 0 0 60px;
+          float: left;
+          a{
+            display: block;
+            width: 171px;
+            height: 55px;
+            text-align: center;
+            line-height: 55px;
+            border-radius: 27.5px;
+            background-color: #000000;
+            margin-bottom: 30px;
+            cursor: pointer;
+            &:last-child{
+              margin-right: 0;
+              img{
+                transform: translateY(-2px);
+              }
+            }
+            >img{
+              width: 24px;
+              vertical-align: middle;
+              transform: translateY(-3px);
+            }
+            span{
+              margin-left: 10px;
+              display: inline-block;
+              vertical-align: middle;
+              font-family: Helvetica;
+              font-size: 20px;
+              font-weight: 300;
+              letter-spacing: 1px;
+              text-align: center;
+              color: #ffffff;
+            }
+          }
+        }
       }
     }
   }
@@ -75,7 +127,7 @@ export default {
     min-width: 1280px;
     min-height: auto;
     position: relative;
-    img{
+    >img{
       width: 100%;
       height: 100%;
       display: block;
@@ -90,12 +142,54 @@ export default {
       .image_text_wrap{
         min-width: 780px;
         max-width: 800px;
-        margin-bottom: 90px;
-        margin-bottom: 72px;
+        margin-bottom: 50px;
         margin-top: -96px;
       }
-      .download_btn{
+      .platform{
         margin: auto;
+        width: 390px;
+        height: 155px;
+        >img{
+          float: left;
+          width: 155px;
+        }
+        .download_btn{
+          margin: 6px 0 0 60px;
+          float: left;
+          a{
+            display: block;
+            width: 171px;
+            height: 55px;
+            text-align: center;
+            line-height: 55px;
+            border-radius: 27.5px;
+            background-color: #000000;
+            margin-bottom: 30px;
+            cursor: pointer;
+            &:last-child{
+              margin-right: 0;
+              img{
+                transform: translateY(-2px);
+              }
+            }
+            >img{
+              width: 24px;
+              vertical-align: middle;
+              transform: translateY(-3px);
+            }
+            span{
+              margin-left: 10px;
+              display: inline-block;
+              vertical-align: middle;
+              font-family: Helvetica;
+              font-size: 20px;
+              font-weight: 300;
+              letter-spacing: 1px;
+              text-align: center;
+              color: #ffffff;
+            }
+          }
+        }
       }
     }
   }

@@ -34,7 +34,7 @@ export default {
       width: 100%;
       height: 350px;
       position: absolute;
-      left:0; top: 37%;
+      left:0; top: 34%;
       z-index: 2000;
       text-align: center;
       margin: auto;
