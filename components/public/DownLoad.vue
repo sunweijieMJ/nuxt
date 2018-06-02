@@ -5,7 +5,7 @@
       <div class="download_content clearfix">
         <h3>即刻体验 <span>瓴里 App</span></h3>
         <div class="platform">
-          <img src="../../assets/icon/download_ic_qc.jpg" alt="下载二维码">
+          <img src="../../assets/icon/download_pc.png" alt="下载二维码">
           <div class="download_btn">
             <a href="https://itunes.apple.com/cn/app/kk-gou-wu/id1319173852?mt=8" target="_blank">
               <img src="../../assets/icon/download_ic_ios.png" alt="iPhone下载图标"><span>iPhone</span>
