@@ -8,17 +8,48 @@
           <p v-for="(val,index) in item.desc" :key="index">{{val}}</p>
         </div>
         <div class="btn_wrap" v-if="item.btn">
-            <a :href="item.btn_href">{{item.btn_text}}</a>
+          <a :href="item.btn_href">{{item.btn_text}}</a>
         </div>
         <div class="img_wrap" v-if="item.img_url">
-            <img :src="item.img_url" alt="简介图">
+          <img :src="item.img_url" alt="简介图">
+          <img v-if="item.video" src="../../assets/icon/video_ic_play.png" alt="" @click="video = !video">
+          <VueVideo v-if="item.video" :poster="poster" :sources="sources" :video="video" @from-vueVideo="hide_video"></VueVideo>
         </div>
       </div>
   </div>
 </template>
 <script>
+  import VueVideo from './VueVideo.vue';
+  import poster from '../../assets/img/about_img_01.jpg';
+
   export default {
-    props:['imageText']
+    props:['imageText'],
+    components: {VueVideo},
+    data(){
+      return {
+        video: false, // 播放视频
+        poster, // ETC 封面图
+        sources: {
+          video_url: 'http://video.lanehub.cn/48f7c11baafc44a7a1f1a959ac1d2de3/7112d8d643864053b942b71d7566b1fc-1a97605ef90cc213707b52e4c15cecea-od-S00000001-200000.mp4',
+          width: 1440,
+          height: 700
+        }
+      };
+    },
+    methods: {
+      hide_video(data) {
+        this.video = data;
+      }
+    },
+    watch: {
+      video(cur){
+        if(cur) {
+          document.documentElement.style.overflow = 'hidden';
+        } else {
+          document.documentElement.style.overflow = 'visible';
+        }
+      }
+    }
   }
 </script>
 <style lang="less" scoped>
@@ -69,10 +100,20 @@
           margin: 91px auto 0 auto;
           min-width: 1280px;
           min-height: auto;
+          position: relative;
           img {
             width: 100%;
             height: 100%;
             display: block;
+            &:nth-of-type(2){
+              cursor: pointer;
+              position: absolute;
+              z-index: 1000;
+              top: 0;bottom: 0;left: 0;right: 0;
+              margin: auto;
+              width: 70px;
+              height: 70px;
+            }
           }
         }
       }
@@ -125,10 +166,20 @@
           margin: 122px auto 0 auto;
           min-width: 1280px;
           min-height: auto;
+          position: relative;
           img {
             width: 100%;
             height: 100%;
             display: block;
+            &:nth-of-type(2){
+              cursor: pointer;
+              position: absolute;
+              z-index: 1000;
+              top: 0;bottom: 0;left: 0;right: 0;
+              margin: auto;
+              width: 80px;
+              height: 80px;
+            }
           }
         }
       }

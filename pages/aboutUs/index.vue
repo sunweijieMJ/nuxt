@@ -48,7 +48,8 @@ export default {
           btn: false,
           btn_text: "",
           btn_href: "",
-          img_url: about_img_01
+          img_url: about_img_01,
+          video: true
         },
         {
           title: ['与用户做朋友'],

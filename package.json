@@ -14,7 +14,9 @@
     "prod": "npm -- run build && pm2 start npm -- run start"
   },
   "dependencies": {
-    "nuxt": "^1.0.0"
+    "nuxt": "^1.0.0",
+    "videojs-contrib-hls": "^5.14.1",
+    "vue-video-player": "^5.0.2"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
