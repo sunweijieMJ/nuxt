@@ -9,7 +9,7 @@
     </ul>
     <div class="contact">
       <p>联系我们</p>
-      <a href="mailto:cooperation@lanehubinc.com">cooperation@lanehubinc.com</a>
+      <a href="mailto:wmzeng@lanehubinc.com">wmzeng@lanehubinc.com</a>
     </div>
   </div>
 </template>
@@ -38,11 +38,6 @@ export default {
           desc: ['计划 2019 年覆盖全国一、二线城市，建成体验中心 20 家。','期待与新颖高端、有品位、追求更好用户互动的商业空间，共创全新体验。']
         },
       ]
-    }
-  },
-  methods: {
-    skip(){
-      window.location.href = 'mailto:cooperation@lanehubinc.com';
     }
   }
 }
